@@ -12,7 +12,15 @@ app.use(express.json());
 app.get("/api/health", (req, res) => {
     res.json({ message: "Task Manager Backend is running" });
 });
-
+app.get("/", (req, res) => {
+    res.send(`
+    <div style="font-family: Arial; text-align: center; margin-top: 80px;">
+      <h1>Task Manager Backend</h1>
+      <p>API is running successfully.</p>
+      <p>Health Check: <a href="/api/health">/api/health</a></p>
+    </div>
+  `);
+});
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/tasks", require("./routes/taskRoutes"));
 
