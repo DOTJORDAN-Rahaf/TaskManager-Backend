@@ -50,35 +50,6 @@ https://github.com/DOTJORDAN-Rahaf/TaskManager-Backend
 - Postman
 - Render
 
-## Project Structure
-
-```txt
-TaskManager-Backend
-│
-├── controllers
-│   ├── authController.js
-│   └── taskController.js
-│
-├── middleware
-│   ├── authMiddleware.js
-│   └── roleMiddleware.js
-│
-├── models
-│   ├── Task.js
-│   └── User.js
-│
-├── routes
-│   ├── authRoutes.js
-│   └── taskRoutes.js
-│
-├── .env.example
-├── .gitignore
-├── package.json
-├── package-lock.json
-├── README.md
-└── server.js
-```
-
 ## Setup Locally
 
 Install dependencies:
